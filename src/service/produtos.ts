@@ -8,4 +8,10 @@ Promise<unknown> => {
   return ServiceProduto;
 };
 
-export default { create };
+const ControllerProductGet = async () :
+Promise<unknown> => {
+  const get = await Models.findAll();
+  return get;
+};
+
+export default { create, ControllerProductGet };

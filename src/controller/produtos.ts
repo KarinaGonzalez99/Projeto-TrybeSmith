@@ -7,6 +7,10 @@ Promise<void> => {
   res.status(201).json(created);
 };
 
-export default {
-  ControllerProduct,
+const ControllerProductGet = async (req: Request, res: Response): 
+Promise<void> => {
+  const get = await ServiceProdutos.ControllerProductGet();
+  res.status(200).json(get);
 };
+
+export default { ControllerProduct, ControllerProductGet };
