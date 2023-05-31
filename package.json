@@ -16,6 +16,7 @@
     "test:local": "mocha",
     "test:coverage": "nyc mocha",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "mocha": "mocha tests/unit/**/*.js --exit",
     "db:reset": "npx -y tsc && npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
   },
   "keywords": [],
