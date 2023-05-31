@@ -13,4 +13,4 @@ Response<void, Record<string, void>> | undefined => {
   return undefined;
 };
 
-export default LoginMiddleware;
+export default LoginMiddleware; // teste
